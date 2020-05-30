@@ -5,7 +5,7 @@
     if (this.hash !== '') {
       e.preventDefault();
       const hash = this.hash;
-      let topHeading = $(hash).offset().top - $(hash).height() - 20;
+      let topHeading = $(hash).offset().top; //- $(hash).height() - 20;
       
       $('html, body').animate({
         scrollTop: topHeading
@@ -48,7 +48,6 @@ function getStyle ( element, ...styleProperty) {
   return result;
 }
 
-function getStyleFromStylesheet () {
-  
-}
+
+
 
