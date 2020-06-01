@@ -1,6 +1,12 @@
 $(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
 
   setDataGrid ();
+
+  $('#grid-container-output-js').html(cssRulesMajadc.getCssStyleRules('bootstrap.min.css', '.container'));
+  $('#grid-container-fluid-output-js').html(cssRulesMajadc.getCssStyleRules('bootstrap.min.css', '.container-fluid'));
+  $('#grid-row-output-js').html(cssRulesMajadc.getCssStyleRules('bootstrap.min.css', '.row'));
+  $('#grid-col-output-js').html(cssRulesMajadc.getCssStyleRules('bootstrap.min.css', '.col'));
   
   $(window).resize(function(){
     setDataGrid ();
@@ -17,11 +23,11 @@ $(document).ready(function(){
       $(this).find('.majadc-js-output').html(getStyle($(this), 'flex-shrink', 'flex-grow', 'flex-basis', 'width', 'max-width'));
     });
     $('#majadc-grid-example-3>div').each(function(){
-      $(this).find('.majadc-js-output').html(`class="${getColClass($($(this)))}"`);
+      $(this).find('.majadc-js-output').html(getColClass($($(this))));
     });
 
     $('#majadc-grid-example-4>div').each(function(){
-      $(this).find('.majadc-js-output').html(`class="${getColClass($($(this)))}"`);
+      $(this).find('.majadc-js-output').html(getColClass($($(this))));
     });
     
      
@@ -35,9 +41,9 @@ $(document).ready(function(){
     let viewportName = getViewport();
     let flexBasis = (col.css('flex-basis') !== 'auto' ) ? Math.trunc(col.css('flex-basis').match(/\d+/)) : 'auto';
     if ( flexBasis === 0) {
-      return `col-${viewportName}`;
+      return `class= "col-${viewportName}"`;
     } else if ( flexBasis === 'auto' ) {
-     return `Present classes: ${col.attr('class')}. <br/> flex-basis: auto;<br/>width: 100%;`;
+     return `Present classes: ${col.attr('class')}. <br/>width: 100%;<br/>flext-basis is not set. The initial value of a flex-basis: auto;`;
     } else {
       for ( let i = 1; i <= 12; i ++ ) {
         if ( flexBasis === Math.trunc(step*i) ) return `col-${viewportName}-${i}`;
