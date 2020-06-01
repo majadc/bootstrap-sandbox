@@ -4,6 +4,8 @@ $(document).ready(function(){
 * Tooltips
 */
   var bootstrapCss = 'bootstrap.min.css';
+  
+  $('[data-toggle="tooltip"]').tooltip();
 
   $('#tooltips-classes').find('button').click(function(){
     $('#tooltips-output-js').html(cssRulesMajadc.getCssStyleRules(bootstrapCss, $(this).text()));
@@ -39,9 +41,9 @@ $(document).ready(function(){
        }
       }
     
-      $('[data-toggle="tooltip"]').tooltip();
+      
     
-  });//tooltips positons
+  });//tooltips positions
 
 
   
