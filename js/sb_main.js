@@ -1,4 +1,5 @@
 
+  jQuery.error = console.error;
   $('body').scrollspy({ target: '#nav-main'});
   // // Add smooth scrolling
   $('#nav-main a').on('click', function (e) {
