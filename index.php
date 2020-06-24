@@ -22,8 +22,9 @@
             <div id="collapse-content" class="collapse show" aria-labelledby="heading-content" data-parent="#accordion-bs-templates">
               <div class="card-body">
                 <ul class="nav flex-column">
-                  <li class="nav-item"><a class="nav-link btn btn-light text-left" href="typography">Typography</a></li>
-                  <li class="nav-item"><a class="nav-link btn btn-light text-left" href="code">Code</a></li>
+                <li class="nav-item"><a class="nav-link btn btn-light text-left" href="reboot.php">Reboot</a></li>
+                  <li class="nav-item"><a class="nav-link btn btn-light text-left" href="typography.php">Typography</a></li>
+                  <li class="nav-item"><a class="nav-link btn btn-light text-left" href="code.php">Code</a></li>
                   
                 </ul>
               </div>
@@ -37,8 +38,8 @@
             <div id="collapse-utilities" class="collapse" aria-labelledby="heading-utilities" data-parent="#accordion-bs-templates">
               <div class="card-body">
                 <ul class="nav flex-column">
-                  <li class="nav-item"><a class="nav-link btn btn-light text-left" href="text">Text</a></li>
-                  <li class="nav-item"><a class="nav-link btn btn-light text-left" href="spacing">Spacing</a></li>
+                  <li class="nav-item"><a class="nav-link btn btn-light text-left" href="text.php">Text</a></li>
+                  <li class="nav-item"><a class="nav-link btn btn-light text-left" href="spacing.php">Spacing</a></li>
                 </ul>
               </div>
             </div>
@@ -51,7 +52,7 @@
             <div id="collapse-grid-system" class="collapse" aria-labelledby="heading-grid-system" data-parent="#accordion-bs-templates">
               <div class="card-body">
                 <ul class="nav flex-column">
-                  <li class="nav-item"><a class="nav-link btn btn-light text-left" href="grid_system">Grid system</a></li>
+                  <li class="nav-item"><a class="nav-link btn btn-light text-left" href="grid_system.php">Grid system</a></li>
                 </ul>
               </div>
             </div>
@@ -64,7 +65,7 @@
             <div id="collapse-components-tooltips" class="collapse" aria-labelledby="heading-components-tooltips" data-parent="#accordion-bs-templates">
               <div class="card-body">
                 <ul class="nav flex-column">
-                  <li class="nav-item"><a class="nav-link btn btn-light text-left" href="components_tooltips">Tooltips</a></li>
+                  <li class="nav-item"><a class="nav-link btn btn-light text-left" href="components_tooltips.php">Tooltips</a></li>
                 </ul>
               </div>
             </div>

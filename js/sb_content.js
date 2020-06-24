@@ -16,6 +16,15 @@ $(document).ready(function(){
   $('#variables').find('.output-js').html(cssRulesMajadc.getCssStyleRules(bootstrapCssFile, 'var'));
 
   $('#user-input').find('.output-js').html(cssRulesMajadc.getCssStyleRules(bootstrapCssFile, 'kbd').substring(indexEnd+1));
+
+
+  if ( $('#bsReboot').length > 0 ) {
+    let bootstrapCssFile = 'bootstrap.min.css';
+    
+    $('#universalSelector').find('.output-js').html(cssRulesMajadc.getCssStyleRules(bootstrapCssFile, '*'));
+    $('#html').find('.output-js').html(cssRulesMajadc.getCssStyleRules(bootstrapCssFile, 'html'));
+    $('#body').find('.output-js').html(cssRulesMajadc.getCssStyleRules(bootstrapCssFile, 'body'));
+  }
   
 
 

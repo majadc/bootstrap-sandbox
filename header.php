@@ -1,3 +1,8 @@
+<?php 
+/* Variable
+*/
+$MAJADC_BOOTSTRAP_VERSION = '4.5';
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>

@@ -5,7 +5,7 @@
         <div class="col-sm-4 sticky-top nav-main">
           <nav class="navbar navbar-expand-sm navbar-light bg-light" id="nav-main">
             <div class="container flex-column">
-              <a href="index" class="navbar-brand">Bootstrap Sandbox</a>
+              <a href="index.php" class="navbar-brand">Bootstrap Sandbox</a>
               <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -29,7 +29,7 @@
           <div class="col-sm">
             <h1 class="h1">Spacing</h1>
           </div>
-          <div class="col-sm text-right align-self-end"><a class="btn btn-primary" href="https://getbootstrap.com/docs/4.1/utilities/spacing/" target="_blank">Bootstrap Spacing</a></div>
+          <div class="col-sm text-right align-self-end"><a class="btn btn-primary" href="https://getbootstrap.com/docs/<?php echo $MAJADC_BOOTSTRAP_VERSION; ?>/utilities/spacing/" target="_blank">Bootstrap Spacing</a></div>
         </header>
 
         <section id="utilities-spacing">
