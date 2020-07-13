@@ -1,5 +1,5 @@
 <?php require_once 'header.php' ?>
-  <div id="bsReboot" class="container">
+  <div class="container">
     <div class="row">
 
       <div class="col-sm-4 sticky-top nav-main">
@@ -15,7 +15,7 @@
                 <li class="nav-item"><a href="#universalSelector" class="nav-link">&#42;</a></li>
                 <li class="nav-item"><a href="#html" class="nav-link">html</a></li>
                 <li class="nav-item"><a href="#body" class="nav-link">body</a></li>
-                <li class="nav-item"><a href="#titleMenuAnchor" class="nav-link">TitleMenuAnchor</a></li>
+                
               </ul>
             </div>
 
@@ -33,6 +33,7 @@
         </header>
     
 
+        <div id="bsReboot">
         <section id="universalSelector" class="my-5">
           <h2 class="mb-3">Universal selector &#42;</h2>
           <pre><code class="output-js"></code></pre>
@@ -47,6 +48,7 @@
           <h2 class="mb-3">body</h2>
           <pre><code class="output-js"></code></pre>
         </section>
+        </div>
 
       </div>
 
