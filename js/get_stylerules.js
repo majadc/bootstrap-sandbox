@@ -2,8 +2,7 @@
 
 var cssRulesMajadc = {};
 (function () {
-  /* Function takes a name of stylesheet style.css, style.min.css
-  * and name of selector e.g: .class, h1, .class p, p.
+  /* Function takes a name of stylesheet and a name of selector e.g: .class, h1, .class p, p.
   * If the style rules exist in the stylesheet,
   *function returns them if not it returns empty string.
   */
@@ -64,7 +63,7 @@ var cssRulesMajadc = {};
     }
   }
   /*
-  * Functions takes a cssStyleRule Object and a name of selector.
+  * Function takes a cssStyleRule Object and a name of selector.
   * It checks if cssStyleRule.selectorText includes searching selector.
   * It returns formatted CSS rules, if they exist.
   */
@@ -107,9 +106,9 @@ var cssRulesMajadc = {};
     }
 
     if (ruleMediaAtRule) {
-      return "  ".concat(selector, " {\n     ").concat(listOfPropertiesArray.join(';\n     '), "\n  }\n}");
+      return "  ".concat(selector, " {\n     ").concat(listOfPropertiesArray.join(';\n     '), ";\n  }\n}");
     } else {
-      return "".concat(selector, " {\n   ").concat(listOfPropertiesArray.join(';\n  '), "\n}\n");
+      return "".concat(selector, " {\n   ").concat(listOfPropertiesArray.join(';\n  '), ";\n  }\n");
     }
   }
   /*

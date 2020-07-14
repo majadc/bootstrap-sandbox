@@ -4,3 +4,5 @@ html/
 components_card.html
 css/bootstrap
 js/bootstrap
+js/form_validation.js
+components_forms-validation.php

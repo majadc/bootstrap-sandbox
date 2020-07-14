@@ -66,6 +66,7 @@
               <div class="card-body">
                 <ul class="nav flex-column">
                   <li class="nav-item"><a class="nav-link btn btn-light text-left" href="components_tooltips.php">Tooltips</a></li>
+                  <li class="nav-item"><a class="nav-link btn btn-light text-left" href="components_card.php">Card</a></li>
                 </ul>
               </div>
             </div>
