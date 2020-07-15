@@ -46,7 +46,8 @@
         
         <?php require_once 'search_in_stylerules.php' ?>
         
-       
+       <div>
+         
 
         <section id="bs-card" class="my-5">
           <h2 class="mb-3">Card</h2>
@@ -133,6 +134,7 @@
           
         </section>
 
+       </div>
 
 
       </div>

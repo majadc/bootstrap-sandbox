@@ -2,6 +2,9 @@ let searchCssRuleset = {};
   (function(){
 
     let cssRuleset = [];
+    let formSearchStylerulesInfo = document.getElementById("formSearchStylerulesInfo");
+    let formSearchStylerulesInput = document.getElementById("formSearchStylerulesInput");
+    let formSearchStylerulesOutputJs = document.getElementById("formSearchStylerulesOutputJs");
 
     this.cssRulesetSearch = function (...args) {
       for ( const arg of args ) {
@@ -16,21 +19,22 @@ let searchCssRuleset = {};
       }
     }
     
-    $("#formSearchStylerulesSubmit").click(function(e){
+    document.getElementById("formSearchStylerulesSubmit").addEventListener("click", function(e){
       searchRuleset();
       e.preventDefault();
-      
     });
+    
 
     function searchRuleset () {
       resetFormSearchStylerules();
 
-      let formSearchStylerulesInput = $("#formSearchStylerulesInput").val();
+      let formSearchStylerulesInputValue = formSearchStylerulesInput.value;
       
-      if ( validationFormSearchStylerulesRequired(formSearchStylerulesInput) ) {
-        let bsRules = getCssRuleset(formSearchStylerulesInput);
+      if ( validationFormSearchStylerulesRequired(formSearchStylerulesInputValue) ) {
+        let bsRules = getCssRuleset(formSearchStylerulesInputValue);
         if  ( validationFormSearchStylerulesNoResult(bsRules) ) {
-          $("#formSearchStylerulesOutputJs").html(colorCssRuleset(formSearchStylerulesInput));
+          formSearchStylerulesOutputJs.innerHTML = colorCssRuleset(formSearchStylerulesInputValue);
+          
         } 
       }
         
@@ -51,11 +55,9 @@ let searchCssRuleset = {};
       let arrayRulesSetResult = getCssRuleset( string ).split('\n');
       let i = 0;
       for ( let item of arrayRulesSetResult ) {
-        //if ( ( item.indexOf(';') > 0 ) ) {
           if ( item.indexOf(string) > 0 ) {
             arrayRulesSetResult[i] = `<span class="mdc-stylerules-property">${item}</span>`;
           }
-        //}
          i++;
       }
       return arrayRulesSetResult.join('\n');
@@ -63,21 +65,28 @@ let searchCssRuleset = {};
 
     function resetFormSearchStylerules () {
     
-     $("#formSearchStylerulesInput").removeClass("invalid");
-      $("#formSearchStylerulesOutputJs").html('');
-      $("#formSearchStylerulesInfo").html('').removeClass("show").attr("aria-hidden", "true");
+      formSearchStylerulesInput.classList.remove("invalid");
+      formSearchStylerulesOutputJs.innerHTML = "";
+      
+      formSearchStylerulesInfo.innerHTML = "";
+      formSearchStylerulesInfo.classList.remove("show");
+      formSearchStylerulesInfo.setAttribute("aria-hidden", "true");
     }
 
     function validationFormSearchStylerulesRequired ( string ) {
       if ( string === '' ) {
-        $("#formSearchStylerulesInput").addClass("invalid");
-        $("#formSearchStylerulesInfo").html("Fill the field.").addClass("show").attr("aria-hidden", "false");
+        formSearchStylerulesInput.classList.add("invalid");
+        formSearchStylerulesInfo.innerHTML = "Fill the field.";
+        formSearchStylerulesInfo.classList.add("show");
+        formSearchStylerulesInfo.setAttribute("aria-hidden", "false");
         return false;
       } else return true;
     }
     function validationFormSearchStylerulesNoResult ( result) {
       if ( result === '' ) {
-        $("#formSearchStylerulesInfo").html("Nothing to find.").addClass("show").attr("aria-hidden", "false");
+        formSearchStylerulesInfo.innerHTML = "Nothing found.";
+        formSearchStylerulesInfo.classList.add("show");
+        formSearchStylerulesInfo.setAttribute("aria-hidden", "false");
         return false;
       } else return true;
     }
