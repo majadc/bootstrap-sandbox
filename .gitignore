@@ -4,3 +4,4 @@ html/
 components_card.html
 js/form_validation.js
 components_forms-validation.php
+node_modules/
