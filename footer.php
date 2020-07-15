@@ -4,12 +4,12 @@
   
    
     <script src="js/get_stylerules.js"></script>
-    <script src="js/search_in_stylerules.js"></script>
-    <script src="js/sb_content.js"></script>
-    <script src="js/sb_components.js"></script>
-    <script src="js/sb_grid.js"></script>
-    <script src="js/sb_utilities.js"></script>
-    <script src="js/sb_main.js"></script>
+    <script src="js/babel/search_in_stylerules.js"></script>
+    <script src="js/babel/sb_content.js"></script>
+    <script src="js/babel/sb_components.js"></script>
+    <script src="js/babel/sb_grid.js"></script>
+    <script src="js/babel/sb_utilities.js"></script>
+    <script src="js/babel/sb_main.js"></script>
     
       
   </body>

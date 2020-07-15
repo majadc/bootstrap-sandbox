@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "babel_1": "babel js/search_in_stylerules.js --out-dir js/babel --presets=@babel/env",
+    "babel_2": "babel js/sb_components.js --out-dir js/babel --presets=@babel/env",
+    "babel_3": "babel js/sb_content.js --out-dir js/babel --presets=@babel/env",
+    "babel_4": "babel js/sb_grid.js --out-dir js/babel --presets=@babel/env",
+    "babel_5": "babel js/sb_main.js --out-dir js/babel --presets=@babel/env",
+    "babel_6": "babel js/sb_utilities.js --out-dir js/babel --presets=@babel/env",
+    "build": "npm-run-all babel_1 babel_2 babel_3 babel_4 babel_5 babel_6"
   },
   "repository": {
     "type": "git",
