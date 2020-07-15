@@ -1,0 +1,103 @@
+.nav-main {
+  height: 100%;
+}
+
+#grid-viewport {
+  font-weight: bold;
+}
+
+.majadc-grid-container {
+  position: relative;
+  min-height: 100px;
+}
+
+.majadc-grid-container::before, .majadc-grid-container::after {
+  position: absolute;
+  width: 15px;
+  height: 100%;
+  color: black;
+  background-color: LightBlue;
+  display: none;
+}
+
+.majadc-grid-container::before {
+  left: 0;
+  content: "";
+}
+
+.majadc-grid-container::after {
+  right: 0;
+  content: "";
+}
+
+.majadc-grid-container:hover::before, .majadc-grid-container:hover::after {
+  display: block;
+}
+
+.majadc-grid-container-row::before {
+  content: "";
+}
+
+.majadc-grid-container-row::after {
+  content: "";
+}
+
+.majadc-equal-columns {
+  background: PapayaWhip;
+}
+
+.majadc-grid > div {
+  min-height: 100px;
+  border: 1px solid PaleVioletRed;
+  background-color: mistyrose;
+  position: relative;
+}
+
+.majadc-equal-columns {
+  background-color: aquamarine;
+}
+
+.majadc-equal-columns .col {
+  background-clip: content-box;
+}
+
+.majadc-class-block {
+  display: block;
+}
+
+.majadc-style-block {
+  display: block;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  line-height: 1;
+  font-size: 1rem;
+  word-break: break-all;
+}
+
+.majadc-nav-projects .card-img-overlay {
+  opacity: 0;
+  background: rgba(52, 58, 64, 0.9);
+  transition: all 0.5s linear;
+}
+
+.majadc-nav-projects .card-img-overlay:hover {
+  opacity: 1;
+}
+
+/*---------form search stylerules---------*/
+.mdc-form-search-stylerules-info {
+  display: none;
+}
+
+.mdc-form-search-stylerules-info.show {
+  display: block;
+}
+
+.mdc-form-search-stylerules-input.invalid {
+  border-color: #dc3545;
+}
+
+.mdc-stylerules-property {
+  background-color: #ffc107;
+}
+
+/*# sourceMappingURL=style_bs_sandbox.compile.css.map */

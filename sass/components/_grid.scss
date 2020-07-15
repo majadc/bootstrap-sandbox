@@ -1,6 +1,4 @@
-.nav-main {
-	height: 100%;
-}
+
 
 #grid-viewport {
 	font-weight: bold;
@@ -72,18 +70,3 @@
 	opacity: 1;
 }
 
-
-/*---------form search stylerules---------*/
-
-.mdc-form-search-stylerules-info {
-	display: none;
-}
-.mdc-form-search-stylerules-info.show {
-	display: block;
-}
-.mdc-form-search-stylerules-input.invalid {
-	border-color: #dc3545;
-}
-.mdc-stylerules-property {
-	background-color: #ffc107;
-}
