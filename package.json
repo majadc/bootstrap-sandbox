@@ -4,11 +4,15 @@
   "description": "Bootstrap Templates",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "scss:watch": "sass --watch scss/style.scss:css/style.css",
+    "css:compile": "sass scss/style.scss css/style.css"
   },
   "keywords": [
     "bootstrap"
   ],
   "author": "majadc",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  }
 }

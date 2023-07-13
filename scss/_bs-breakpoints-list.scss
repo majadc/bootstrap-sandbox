@@ -1,0 +1,65 @@
+// media queries breakpoints list 
+.bs-breakpoints-media-query-viewport-list {
+  .list-group-item {
+    padding-left: 40px;
+  }
+
+  .active {
+    border-color: black;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translatey(-50%);
+      width: 0;
+      height: 0;
+      border: 15px solid black;
+      border-left-width: 30px;
+      border-right-color: transparent;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+    }
+  }
+
+  &-width {
+    background-color: $primary;
+    color: $white;
+  }
+
+}
+
+@include media-breakpoint-up(sm) {
+  .bs-breakpoints-media-query-viewport-list-width {
+    background-color: $secondary;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .bs-breakpoints-media-query-viewport-list-width {
+    background-color: $success;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .bs-breakpoints-media-query-viewport-list-width {
+    background-color: $danger;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .bs-breakpoints-media-query-viewport-list-width {
+    background-color: $warning;
+    color: $black;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .bs-breakpoints-media-query-viewport-list-width {
+    background-color: $info;
+    color: $black;
+  }
+}

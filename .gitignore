@@ -1,2 +1,5 @@
 bootstrap-sandbox.code-workspace
+readme-local.md
 .vscode
+node_modules
+templates

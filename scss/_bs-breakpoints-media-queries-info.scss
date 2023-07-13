@@ -1,0 +1,143 @@
+// breakpoints for media-query: min-width
+.bs-breakpoints-media-query-up {
+  background-color: $primary;
+  color: $white;
+}
+
+@include media-breakpoint-up(sm) {
+  .bs-breakpoints-media-query-up {
+    background-color: $secondary;
+
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .bs-breakpoints-media-query-up {
+    background-color: $success;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .bs-breakpoints-media-query-up {
+    background-color: $danger;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .bs-breakpoints-media-query-up {
+    background-color: $warning;
+    color: $black;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .bs-breakpoints-media-query-up {
+    background-color: $info;
+
+  }
+}
+
+
+// breakpoints for media-query: max-width
+// for max-width breakpoints are different
+// e.g it is not 576px but 576 - 0.2 = 575.98px
+
+.bs-breakpoints-media-query-down {
+  background-color: $info;
+  color: $black;
+}
+
+// not greater than max-width = 1399.98px
+@include media-breakpoint-down(xxl) {
+  .bs-breakpoints-media-query-down {
+    background-color: $info;
+
+  }
+}
+
+// not greater than max-width = 1199.98px 
+@include media-breakpoint-down(xl) {
+  .bs-breakpoints-media-query-down {
+    background-color: $warning;
+    color: $white;
+  }
+}
+
+// not greater than max-width = 991.98px
+@include media-breakpoint-down(lg) {
+  .bs-breakpoints-media-query-down {
+    background-color: $danger;
+  }
+}
+
+// not greater than max-width = 767.98px
+@include media-breakpoint-down(md) {
+  .bs-breakpoints-media-query-down {
+    background-color: $success;
+  }
+}
+
+
+// not greater than max-width = 575.98px
+@include media-breakpoint-down(sm) {
+  .bs-breakpoints-media-query-down {
+    background-color: $secondary;
+  }
+}
+
+//********** MEDIA BREAKPOINT ONLY ****************
+// media queries targeting single segment of screen sizes  -> using max-width and min-width
+// min-width is a standard bootstrap breakpoint
+// from the max-width is subtracted 0.2
+
+// only less then 576px
+// @media (max-width: 575.98px)
+@include media-breakpoint-only(xs) {
+  .bs-breakpoints-media-query-single {
+    background-color: $primary;
+    color: $white;
+  }
+}
+
+// only from 576px to 767.98px
+// @media (min-width: 576px) and (max-width: 767.98px) { ... }
+@include media-breakpoint-only(sm) {
+  .bs-breakpoints-media-query-single {
+    background-color: $secondary;
+    color: $white;
+  }
+}
+
+// from 768px to 991.98px
+// @media (min-width: 768px) and (max-width: 991.98px) { ... }
+@include media-breakpoint-only(md) {
+  .bs-breakpoints-media-query-single {
+    background-color: $success;
+    color: $white;
+  }
+}
+
+// from 992px to 1199.98px
+// @media (min-width: 992px) and (max-width: 1199.98px) { ... }
+@include media-breakpoint-only(lg) {
+  .bs-breakpoints-media-query-single {
+    background-color: $danger;
+    color: $white;
+  }
+}
+
+// from 1200px to 1399.98px
+// @media (min-width: 1200px) and (max-width: 1399.98px) { ... }
+@include media-breakpoint-only(xl) {
+  .bs-breakpoints-media-query-single {
+    background-color: $warning;
+  }
+}
+
+// from 1400px
+// @media (min-width: 1400px)
+@include media-breakpoint-only(xxl) {
+  .bs-breakpoints-media-query-single {
+    background-color: $info;
+  }
+}

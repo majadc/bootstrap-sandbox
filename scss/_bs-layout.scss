@@ -1,0 +1,35 @@
+.bs-breakpoints-viewport-state {
+  background-color: $primary;
+  color: $white;
+}
+
+@include media-breakpoint-up(sm) {
+  .bs-breakpoints-viewport-state {
+    background-color: $secondary;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .bs-breakpoints-viewport-state {
+    background-color: $success;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .bs-breakpoints-viewport-state {
+    background-color: $danger;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .bs-breakpoints-viewport-state {
+    background-color: $warning;
+    color: $black;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .bs-breakpoints-viewport-state {
+    background-color: $info;
+  }
+}
