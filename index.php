@@ -22,7 +22,7 @@
             <ul class="nav flex-column">
               <li class="nav-item"><a class="nav-link" href="layout-breakpoints.php">Breakpoints</a></li>
               <li class="nav-item"><a class="nav-link" href="layout-containers.php">Containers</a></li>
-              <li class="nav-item"><a class="nav-link" href="">Grid</a></li>
+              <li class="nav-item"><a class="nav-link" href="layout-grid.php">Grid</a></li>
             </ul>
           </div>
         </div>
