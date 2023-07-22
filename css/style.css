@@ -322,6 +322,89 @@
     background-color: #0dcaf0;
   }
 }
+.bs-mq-classes-display .col {
+  background-color: #0d6efd;
+  color: #fff;
+}
+.bs-mq-classes-display pre {
+  white-space: pre-wrap;
+}
+
+@media (min-width: 576px) {
+  .bs-mq-classes-display .col-sm {
+    background-color: #6c757d;
+    color: #fff;
+  }
+}
+@media (min-width: 768px) {
+  .bs-mq-classes-display .col-md {
+    background-color: #198754;
+    color: #fff;
+  }
+}
+@media (min-width: 992px) {
+  .bs-mq-classes-display .col-lg {
+    background-color: #dc3545;
+    color: #fff;
+  }
+}
+@media (min-width: 1200px) {
+  .bs-mq-classes-display .col-xl {
+    background-color: #ffc107;
+    color: #000;
+  }
+}
+@media (min-width: 1400px) {
+  .bs-mq-classes-display .col-xxl {
+    background-color: #0dcaf0;
+    color: #000;
+  }
+}
+.bs-grid-template {
+  background-image: repeating-linear-gradient(to right, rgba(255, 228, 196, 0.2) 0.125%, rgba(255, 228, 196, 0.2) 8.2083333333%, rgba(222, 184, 135, 0.25) 8.2083333333%, rgba(222, 184, 135, 0.25) 8.4583333333%);
+}
+
+.bs-grid-columns .row > * {
+  border: 1px solid #6c757d;
+}
+.bs-grid-columns pre {
+  white-space: pre-wrap;
+}
+.bs-grid-columns .bs-bg-xs {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+@media (min-width: 576px) {
+  .bs-grid-columns .bs-bg-sm {
+    background-color: #6c757d;
+    color: #fff;
+  }
+}
+@media (min-width: 768px) {
+  .bs-grid-columns .bs-bg-md {
+    background-color: #198754;
+    color: #fff;
+  }
+}
+@media (min-width: 992px) {
+  .bs-grid-columns .bs-bg-lg {
+    background-color: #dc3545;
+    color: #fff;
+  }
+}
+@media (min-width: 1200px) {
+  .bs-grid-columns .bs-bg-xl {
+    background-color: #ffc107;
+    color: #000;
+  }
+}
+@media (min-width: 1400px) {
+  .bs-grid-columns .bs-bg-xxl {
+    background-color: #0dcaf0;
+    color: #000;
+  }
+}
 .bs-breakpoints-viewport-state {
   background-color: #0d6efd;
   color: #fff;

@@ -1,0 +1,57 @@
+// grid-media-query-classes.html
+
+.bs-mq-classes-display {
+  .col {
+    background-color: $primary;
+    color: $white;
+  }
+
+  pre {
+    white-space: pre-wrap;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .bs-mq-classes-display {
+    .col-sm {
+      background-color: $secondary;
+      color: $white;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .bs-mq-classes-display {
+    .col-md {
+      background-color: $success;
+      color: $white;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .bs-mq-classes-display {
+    .col-lg {
+      background-color: $danger;
+      color: $white;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .bs-mq-classes-display {
+    .col-xl {
+      background-color: $warning;
+      color: $black;
+    }
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .bs-mq-classes-display {
+    .col-xxl {
+      background-color: $info;
+      color: $black;
+    }
+  }
+}

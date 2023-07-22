@@ -1,12 +1,8 @@
 const bsBootstrapCssFile = "bootstrap.min.css";
-/*
- * bs-breakpoints-viewport-state.js
- * display viewport state:
- *  - current viewport width in px
- *  - breakpoint name
- *  - breakpoint Class Infix
- *  Used in:
- *  - layout-breakpoints
+
+/*******************************************************************************
+ *
+ * layout-breakpoints page
  */
 let bsBreakpointsViewportStateElement = document.getElementById(
   "bsBreakpointsViewportState"
@@ -24,15 +20,11 @@ if (
       bsBreakpointsViewportStateElement
     );
   });
-}
+} // if bsBreakpointsViewportStateElement
 
-/**
- * bs-breakpoints-list.js
- * check:
- *  - current viewport width in px
- *  - viewport name with Class Infix and viewport range
- *  Used:
- *   - layout-breakpoints
+/*******************************************************************************
+ *
+ * layout-breakpoints page
  */
 let bsBreakpointsMediaQueryListElement = document.getElementById(
   "bsBreakpointsMediaQueryList"
@@ -49,11 +41,13 @@ if (
       bsBreakpointsMediaQueryListElement
     );
   });
-}
+} // if bsBreakpointsMediaQueryListElement
 
-/**
- * Breakpoints based on different sizes viewport:
+/*******************************************************************************
+ *
+ *  Breakpoints based on different sizes viewport:
  * min-width max-width, Single breakpoint
+ * layout-breakpoints page
  */
 
 let bsBreakpointsMQMinWidthElement = document.getElementById(
@@ -72,7 +66,7 @@ if (
       bsBreakpointsMQMinWidthElement
     );
   });
-} // bsBreakpointsMQMinWidthElement
+} // if bsBreakpointsMQMinWidthElement
 
 let bsBreakpointsMQMaxWidthElement = document.getElementById(
   "bsBreakpointsMediaQueryMaxWidth"
@@ -90,7 +84,7 @@ if (
       bsBreakpointsMQMaxWidthElement
     );
   });
-} // bsBreakpointsMQMaxWidthElement
+} // if bsBreakpointsMQMaxWidthElement
 
 let bsBreakpointsMQSingleSegmentElement = document.getElementById(
   "bsBreakpointsMediaQuerySingleSegment"
@@ -109,11 +103,12 @@ if (
   });
 } // bsBreakpointsMQSingleSegmentElement
 
-/*
- * Layout Containers
+/*******************************************************************************
+ *
+ * layout-containers page
  */
 
-//CONTAINER
+// CONTAINER
 let bsLayoutContainerContainerElement =
   document.getElementById("bsLayoutContainer");
 let bsLayoutContainerJsOutputContainerElement = document.getElementById(
@@ -134,9 +129,9 @@ if (
     "padding-left",
     "padding-right"
   );
-}
+} // if bsLayoutContainerContainerElement
 
-//container fluid
+// CONTAINER FLUID
 let bsLayoutContainerContainerFluidElement = document.getElementById(
   "bsLayoutContainerFluid"
 );
@@ -158,9 +153,9 @@ if (
     "padding-left",
     "padding-right"
   );
-}
+} // if bsLayoutContainerContainerFluidElement
 
-//row
+// ROW
 let bsLayoutContainerRowElement = document.getElementById("bsLayoutRow");
 let bsLayoutContainerJsOutputRowElement = document.getElementById(
   "bsLayoutRowComputedStyle"
@@ -182,9 +177,9 @@ if (
     "margin-left",
     "margin-right"
   );
-}
+} // if bsLayoutContainerRowElement
 
-// columns
+// COL
 let bsLayoutContainerCellElement = document.getElementById("bsLayoutCell");
 let bsLayoutContainerJsOutputCellElement = document.getElementById(
   "bsLayoutCellComputedStyle"
@@ -203,5 +198,133 @@ if (
     bsLayoutContainerJsOutputCellElement,
     "padding-left",
     "padding-right"
+  );
+} // if bsLayoutContainerCellElement
+
+/**
+ * Basic style for .col-*
+ * layout-grid page
+ */
+let bsGridColumnCellElement = document.getElementById("bsGridColumnCell");
+let bsGridGutterStyleCellOutput = document.getElementById(
+  "bsGridGutterStyleCell"
+);
+
+if (bsGridColumnCellElement) {
+  CSSStyleRulesInformation.displayElementStyleFromStylesheet(
+    bsBootstrapCssFile,
+    ".row > *",
+    "#bsGridBaseStyleCell"
+  );
+  CSSStyleRulesInformation.displayElementComputedStyle(
+    bsGridColumnCellElement,
+    bsGridGutterStyleCellOutput,
+    "padding-left",
+    "padding-right"
+  );
+} // if bsGridColumnCellElement
+
+/*******************************************************************************
+ *
+ * layout-grid page
+ */
+let bsMQClassesContainer = document.getElementById("bsGridMQClassesDisplay");
+if (
+  typeof bsMQClassesContainer !== undefined &&
+  bsMQClassesContainer !== null
+) {
+  bsGridMediaQueryClasses.displayMediaQueryClassesInfo(
+    bsBootstrapCssFile,
+    bsMQClassesContainer,
+    "bs-grid-mq-classes-output-js"
+  );
+  window.addEventListener("resize", function () {
+    bsGridMediaQueryClasses.displayMediaQueryClassesInfo(
+      bsBootstrapCssFile,
+      bsMQClassesContainer,
+      "bs-grid-mq-classes-output-js"
+    );
+  });
+} // if bsMQClassesContainer
+
+/**
+ * layout-grid
+ */
+
+let bsGridEqualColumnsElement = document.getElementById("bsGridEqualColumns");
+if (
+  typeof bsGridEqualColumnsElement !== "undefined" &&
+  bsGridEqualColumnsElement !== null
+) {
+  bsLayoutGridColStyle.displayColStyle(
+    bsBootstrapCssFile,
+    bsGridEqualColumnsElement,
+    "bs-grid-columns"
+  );
+} // if bsGridEqualColumnsElement
+
+let bsGridOneColumnWidthElement = document.getElementById(
+  "bsGridOneColumnWidth"
+);
+if (
+  typeof bsGridOneColumnWidthElement !== "undefined" &&
+  bsGridOneColumnWidthElement !== null
+) {
+  bsLayoutGridColStyle.displayColStyle(
+    bsBootstrapCssFile,
+    bsGridOneColumnWidthElement,
+    "bs-grid-columns"
+  );
+} // if bsGridOneColumnWidthElement
+
+let bsGridAllBreakpointsElement = document.getElementById(
+  "bsGridAllBreakpoints"
+);
+if (
+  typeof bsGridAllBreakpointsElement !== "undefined" &&
+  bsGridAllBreakpointsElement !== null
+) {
+  bsLayoutGridColStyle.displayColStyle(
+    bsBootstrapCssFile,
+    bsGridAllBreakpointsElement,
+    "bs-grid-columns"
+  );
+}
+
+let bsGridStackHorizontallyElement = document.getElementById(
+  "bsGridStackHorizontally"
+);
+if (
+  typeof bsGridStackHorizontallyElement !== "undefined" &&
+  bsGridStackHorizontallyElement !== null
+) {
+  bsLayoutGridColStyle.displayColStyle(
+    bsBootstrapCssFile,
+    bsGridStackHorizontallyElement,
+    "bs-grid-columns"
+  );
+} // if bsGridStackHorizontallyElement
+
+let bsGridMixMatchElement = document.getElementById("bsGridMixMatch");
+if (
+  typeof bsGridMixMatchElement !== "undefined" &&
+  bsGridMixMatchElement !== null
+) {
+  bsLayoutGridColStyle.displayColStyle(
+    bsBootstrapCssFile,
+    bsGridMixMatchElement,
+    "bs-grid-columns"
+  );
+} // if bsGridMixMatchElement
+
+let bsGridExample_1Element = document.getElementById("bsGridExample_1");
+if (
+  typeof bsGridExample_1Element !== "undefined" &&
+  bsGridExample_1Element !== null
+) {
+  bsLayoutGridColStyle.displayColStyle(
+    bsBootstrapCssFile,
+    bsGridExample_1Element,
+    "bs-grid-columns"
   );
 }

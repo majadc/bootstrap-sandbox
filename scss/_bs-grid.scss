@@ -1,0 +1,84 @@
+.bs-grid-template {
+  background-image: repeating-linear-gradient(to right, rgba(255, 228, 196, 0.2) 0.125%, rgba(255, 228, 196, 0.2) 8.2083333333%, rgba(222, 184, 135, 0.25) 8.2083333333%, rgba(222, 184, 135, 0.25) 8.4583333333%);
+}
+
+.bs-grid-columns {
+  .row > * {
+    border: 1px solid $secondary;
+
+  }
+
+
+  pre {
+    white-space: pre-wrap;
+  }
+
+
+  .bs-bg {
+    &-xs {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+}
+
+
+@include media-breakpoint-up(sm) {
+  .bs-grid-columns {
+    .bs-bg {
+      &-sm {
+        background-color: $secondary;
+        color: $white;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .bs-grid-columns {
+    .bs-bg {
+      &-md {
+        background-color: $success;
+        color: $white;
+      }
+    }
+  }
+}
+
+
+@include media-breakpoint-up(lg) {
+  .bs-grid-columns {
+    .bs-bg {
+      &-lg {
+        background-color: $danger;
+        color: $white;
+      }
+    }
+  }
+}
+
+
+@include media-breakpoint-up(xl) {
+  .bs-grid-columns {
+    .bs-bg {
+      &-xl {
+        background-color: $warning;
+        color: $black;
+      }
+    }
+  }
+}
+
+
+@include media-breakpoint-up(xxl) {
+  .bs-grid-columns {
+    .bs-bg {
+      &-xxl {
+        background-color: $info;
+        color: $black;
+      }
+
+    }
+
+  }
+}
