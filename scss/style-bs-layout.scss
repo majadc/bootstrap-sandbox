@@ -4,9 +4,9 @@
 @import "../node_modules/bootstrap/scss/maps";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/root";
-
-@import "bs-breakpoints-list";
-@import "bs-breakpoints-media-queries-info";
-@import "bs-grid-media-query-classes";
-@import "bs-grid";
-@import "bs-layout";
+// -----bs-layout---------------------------------------------------------------
+@import "bs-layout/bs-breakpoints-list";
+@import "bs-layout/bs-breakpoints-media-queries-info";
+@import "bs-layout/bs-grid-media-query-classes";
+@import "bs-layout/bs-grid";
+@import "bs-layout/bs-layout";

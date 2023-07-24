@@ -1,0 +1,33 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "rules": {
+    "no-empty-source": null,
+    "block-no-empty": null,
+    "scss/at-if-closing-brace-newline-after": null,
+    "scss/dollar-variable-pattern": "^([a-z][a-z0-9]*)((-*|_*)[a-z0-9]+)*$",
+    "scss/at-mixin-pattern": "^([a-z][a-z0-9]*)((-*|_*)[a-z0-9]+)*$",
+    "selector-class-pattern": "^([a-z][a-z0-9]*)((-*|_*)[a-z0-9]+)*$",
+    "selector-id-pattern": "^([a-z][a-z0-9]*)((-*|_*)[a-z0-9]+)*$",
+    "rule-empty-line-before": [
+      "always-multi-line",
+      {
+        "ignore": [
+          "inside-block",
+          "after-comment"
+        ]
+      }
+    ],
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "except": [
+          "blockless-after-same-name-blockless",
+          "first-nested"
+        ],
+        "ignore": [
+          "after-comment"
+        ]
+      }
+    ]
+  }
+}
