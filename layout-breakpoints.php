@@ -19,7 +19,7 @@
   <header class="container mb-5">
     <div class="row">
       <div class="col">
-        <h1 id="breakpoints" class="h1">Breakpoints <a class="btn btn-sm text-bg-dark" href="https://getbootstrap.com/docs/<?php echo $MAJADC_BOOTSTRAP_VERSION; ?>/layout/breakpoints/" target="_blank" title="Bootstrap Breakpoints Documentation">Doc</a></h1>
+        <h1 id="breakpoints">Breakpoints <a class="btn btn-sm text-bg-dark" href="https://getbootstrap.com/docs/5.3/layout/breakpoints/" target="_blank" title="Bootstrap Breakpoints Documentation">Doc</a></h1>
       </div>
     </div>
     <div class="row">
@@ -31,7 +31,7 @@
   <div class="container mb-5">
     <div class="row">
       <div class="col">
-        <h2 class="h2 mb-3">List of breakpoints <a class="btn btn-sm text-bg-dark" href="https://getbootstrap.com/docs/<?php echo $MAJADC_BOOTSTRAP_VERSION; ?>/layout/breakpoints/#available-breakpoints" target="_blank" title="Bootstrap Available breakpoints - Documentation">Doc</a></h2>
+        <h2 class="h2 mb-3">List of breakpoints <a class="btn btn-sm text-bg-dark" href="https://getbootstrap.com/docs/5.3/layout/breakpoints/#available-breakpoints" target="_blank" title="Bootstrap Available breakpoints - Documentation">Doc</a></h2>
         <ul class="list-group bs-breakpoints-media-query-viewport-list" id="bsBreakpointsMediaQueryList">
           <li class="list-group-item">
             Current viewport width:
