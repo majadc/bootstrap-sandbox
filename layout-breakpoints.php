@@ -15,11 +15,11 @@
   </div>
 </nav>
 
-<section class="mt-4" data-bs-spy="scroll" data-bs-target="#pageMenu" data-bs-smooth-scroll="true">
+<article class="mt-4" data-bs-spy="scroll" data-bs-target="#pageMenu" data-bs-smooth-scroll="true">
   <header class="container mb-5">
     <div class="row">
       <div class="col">
-        <h1 id="breakpoints">Breakpoints <a class="btn btn-sm text-bg-dark" href="https://getbootstrap.com/docs/5.3/layout/breakpoints/" target="_blank" title="Bootstrap Breakpoints Documentation">Doc</a></h1>
+        <h1 id="breakpoints">Breakpoints <a class="btn btn-sm text-bg-dark btn-bs-version" href="https://getbootstrap.com/docs/5.3/layout/breakpoints/" target="_blank" title="Bootstrap Breakpoints Documentation">Doc</a></h1>
       </div>
     </div>
     <div class="row">
@@ -28,10 +28,11 @@
       </div>
     </div>
   </header>
+
   <div class="container mb-5">
     <div class="row">
       <div class="col">
-        <h2 class="h2 mb-3">List of breakpoints <a class="btn btn-sm text-bg-dark" href="https://getbootstrap.com/docs/5.3/layout/breakpoints/#available-breakpoints" target="_blank" title="Bootstrap Available breakpoints - Documentation">Doc</a></h2>
+        <h2 class="h2 mb-3">List of breakpoints <a class="btn btn-sm text-bg-dark btn-bs-version" href="https://getbootstrap.com/docs/5.3/layout/breakpoints/#available-breakpoints" target="_blank" title="Bootstrap Available breakpoints - Documentation">Doc</a></h2>
         <ul class="list-group bs-breakpoints-media-query-viewport-list" id="bsBreakpointsMediaQueryList">
           <li class="list-group-item">
             Current viewport width:
@@ -63,7 +64,7 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <h2 class="h2 mb-3" id="media-queries">Media Queries <a href="https://getbootstrap.com/docs/5.3/layout/breakpoints/#media-queries" class="btn btn-sm text-bg-dark" target="_blank" title="Bootstrap Media Queries - Documentation">Doc</a></h2>
+        <h2 class="h2 mb-3" id="media-queries">Media Queries <a href="https://getbootstrap.com/docs/5.3/layout/breakpoints/#media-queries" class="btn btn-sm text-bg-dark btn-bs-version" target="_blank" title="Bootstrap Media Queries - Documentation">Doc</a></h2>
       </div>
     </div>
   </div>
@@ -104,7 +105,8 @@
       </div>
     </div>
   </div>
-</section>
+
+</article>
 
 
 

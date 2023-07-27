@@ -21,11 +21,11 @@
   </div>
 </nav>
 
-<section class="mt-4" data-bs-spy="scroll" data-bs-target="#pageMenu" data-bs-smooth-scroll="true">
+<article class="mt-4" data-bs-spy="scroll" data-bs-target="#pageMenu" data-bs-smooth-scroll="true">
   <header class="container mb-5">
     <div class="row">
       <div class="col">
-        <h1 id="grid" class="h1">Grid <a class="btn btn-sm text-bg-dark" href="https://getbootstrap.com/docs/<?php echo $MAJADC_BOOTSTRAP_VERSION; ?>/layout/grid/" target="_blank" title="Bootstrap Grid - Documentation">Doc</a></h1>
+        <h1 id="grid" class="h1">Grid <a class="btn btn-sm text-bg-dark btn-bs-version" href="https://getbootstrap.com/docs/5.3/layout/grid/" target="_blank" title="Bootstrap Grid - Documentation">Doc</a></h1>
       </div>
     </div>
 
@@ -34,7 +34,7 @@
   <div class="container mb-3">
     <div class="row">
       <div class="col">
-        <h2 class="h2 mb-3" id="breakpoints">Breakpoints <a class="btn btn-sm text-bg-dark" href="https://getbootstrap.com/docs/<?php echo $MAJADC_BOOTSTRAP_VERSION; ?>/layout/grid/#how-it-works" target="_blank" title="Bootstrap Breakpoints - Documentation">Doc</a></h2>
+        <h2 class="h2 mb-3" id="breakpoints">Breakpoints <a class="btn btn-sm text-bg-dark btn-bs-version" href="https://getbootstrap.com/docs/5.3/layout/grid/#how-it-works" target="_blank" title="Bootstrap Breakpoints - Documentation">Doc</a></h2>
         <p>Bootstrap grid supports six responsive breakpoints. Breakpoints are based on min-width media queries, meaning they affect that breakpoint and all those above it (e.g., .col-sm-4 applies to sm, md, lg, xl, and xxl).</p>
         <h3 class="h3 my-3">Basic style for column <code>.row > *</code></h3>
         <pre><code id="bsGridBaseStyleCell"></code></pre>
@@ -77,7 +77,7 @@
   <div class="container mt-5">
     <div class="row">
       <div class="col">
-        <h2 class="h2" id="twelve-column-system">The 12 column system <a class="btn btn-sm text-bg-dark" href="https://getbootstrap.com/docs/<?php echo $MAJADC_BOOTSTRAP_VERSION; ?>/layout/grid/#grid-options" target="_blank" title="Bootstrap Grid - Documentation">Doc</a></h2>
+        <h2 class="h2" id="twelve-column-system">The 12 column system <a class="btn btn-sm text-bg-dark btn-bs-version" href="https://getbootstrap.com/docs/5.3/layout/grid/#grid-options" target="_blank" title="Bootstrap Grid - Documentation">Doc</a></h2>
         <p>There are 12 template columns available per row. Column classes indicate the number of template columns to span (e.g., col-4 spans four). widths are set in percentages so you always have the same relative sizing.</p>
       </div>
     </div>
@@ -104,7 +104,7 @@
     <div class="row">
       <div class="col">
         <h2 class="h2 mb-3">Grid Examples</h2>
-        <h3 class="h3 mt-5" id="grid-equal-width">Equal-width <a class="btn btn-sm text-bg-dark" href="https://getbootstrap.com/docs/<?php echo $MAJADC_BOOTSTRAP_VERSION; ?>/layout/grid/#equal-width" target="_blank" title="Bootstrap Grid Equal-width - Documentation">Doc</a></h3>
+        <h3 class="h3 mt-5" id="grid-equal-width">Equal-width <a class="btn btn-sm text-bg-dark btn-bs-version" href="https://getbootstrap.com/docs/5.3/layout/grid/#equal-width" target="_blank" title="Bootstrap Grid Equal-width - Documentation">Doc</a></h3>
       </div>
     </div>
   </div>
@@ -135,7 +135,7 @@
   <div class="container mt-5 mb-3">
     <div class="row">
       <div class="coll">
-        <h3 class="h3 my-3" id="setting-one-column-width">Setting one column width <a class="btn btn-sm text-bg-dark" href="https://getbootstrap.com/docs/<?php echo $MAJADC_BOOTSTRAP_VERSION; ?>/layout/grid/#setting-one-column-width" target="_blank" title="Bootstrap Grid - Documentation">Doc</a></h3>
+        <h3 class="h3 my-3" id="setting-one-column-width">Setting one column width <a class="btn btn-sm text-bg-dark btn-bs-version" href="https://getbootstrap.com/docs/5.3/layout/grid/#setting-one-column-width" target="_blank" title="Bootstrap Grid - Documentation">Doc</a></h3>
       </div>
     </div>
   </div>
@@ -169,7 +169,7 @@
   <div class="container mt-5 mb-3">
     <div class="row">
       <div class="col">
-        <h3 class="h3" id="all-breakpoints">All breakpoints <a class="btn btn-sm text-bg-dark" href="https://getbootstrap.com/docs/<?php echo $MAJADC_BOOTSTRAP_VERSION; ?>/layout/grid/#all-breakpoints" target="_blank" title="Bootstrap Grid - Documentation">Doc</a></h3>
+        <h3 class="h3" id="all-breakpoints">All breakpoints <a class="btn btn-sm text-bg-dark btn-bs-version" href="https://getbootstrap.com/docs/5.3/layout/grid/#all-breakpoints" target="_blank" title="Bootstrap Grid - Documentation">Doc</a></h3>
       </div>
     </div>
   </div>
@@ -190,7 +190,7 @@
   <div class="container mt-5 mb-3">
     <div class="row">
       <div class="col">
-        <h3 class="h3" id="stack-horizontally">Stack horizontally <a class="btn btn-sm text-bg-dark" href="https://getbootstrap.com/docs/<?php echo $MAJADC_BOOTSTRAP_VERSION; ?>/layout/grid/#stacked-to-horizontal" target="_blank" title="Bootstrap Grid - Documentation">Doc</a></h3>
+        <h3 class="h3" id="stack-horizontally">Stack horizontally <a class="btn btn-sm text-bg-dark btn-bs-version" href="https://getbootstrap.com/docs/5.3/layout/grid/#stacked-to-horizontal" target="_blank" title="Bootstrap Grid - Documentation">Doc</a></h3>
       </div>
     </div>
   </div>
@@ -210,7 +210,7 @@
   <div class="container mt-5 mb-3">
     <div class="row">
       <div class="col">
-        <h3 class="h3" id="mix-and-match">Mix and match <a class="btn btn-sm text-bg-dark" href="https://getbootstrap.com/docs/<?php echo $MAJADC_BOOTSTRAP_VERSION; ?>/layout/grid/#mix-and-match" target="_blank" title="Bootstrap Grid - Documentation">Doc</a></h3>
+        <h3 class="h3" id="mix-and-match">Mix and match <a class="btn btn-sm text-bg-dark btn-bs-version" href="https://getbootstrap.com/docs/5.3/layout/grid/#mix-and-match" target="_blank" title="Bootstrap Grid - Documentation">Doc</a></h3>
       </div>
     </div>
   </div>
@@ -248,5 +248,5 @@
     </div>
   </div>
 
-</section>
+</article>
 <?php require_once 'footer.php' ?>

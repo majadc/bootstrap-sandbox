@@ -19,11 +19,11 @@
   </div>
 </nav>
 
-<section class="mt-5" data-bs-spy="scroll" data-bs-target="#pageMenu" data-bs-smooth-scroll="true">
+<article class="mt-5" data-bs-spy="scroll" data-bs-target="#pageMenu" data-bs-smooth-scroll="true">
   <header class="container mb-5">
     <div class="row">
       <div class="col">
-        <h1 id="containers" class="h1">Containers <a class="btn btn-sm text-bg-dark" href="https://getbootstrap.com/docs/<?php echo $MAJADC_BOOTSTRAP_VERSION; ?>/layout/containers/" target="_blank" title="Bootstrap Containers - Documentation">Doc</a></h1>
+        <h1 id="containers" class="h1">Containers <a class="btn btn-sm text-bg-dark btn-bs-version" href="https://getbootstrap.com/docs/5.3/layout/containers/" target="_blank" title="Bootstrap Containers - Documentation">Doc</a></h1>
       </div>
     </div>
     <div class="row">
@@ -32,6 +32,7 @@
       </div>
     </div>
   </header>
+
   <div class="container">
     <div class="row">
       <div class="col">
@@ -80,7 +81,7 @@
   <div class="container mb-3">
     <div class="row">
       <div class="col">
-        <h2 id="container" class="h2">Container <a class="btn btn-sm text-bg-dark" href="https://getbootstrap.com/docs/<?php echo $MAJADC_BOOTSTRAP_VERSION; ?>/layout/containers/#default-container" target="_blank" title="Bootstrap Default container - Documentation">Doc</a></h2>
+        <h2 id="container" class="h2">Container <a class="btn btn-sm text-bg-dark btn-bs-version" href="https://getbootstrap.com/docs/5.3/layout/containers/#default-container" target="_blank" title="Bootstrap Default container - Documentation">Doc</a></h2>
       </div>
     </div>
   </div>
@@ -100,7 +101,7 @@
   <div class="container mb-3">
     <div class="row">
       <div class="col">
-        <h2 id="container-fluid" class="h2">Fluid Container <a class="btn btn-sm text-bg-dark" href="https://getbootstrap.com/docs/<?php echo $MAJADC_BOOTSTRAP_VERSION; ?>/layout/containers/#fluid-containers" target="_blank" title="Bootstrap Fluid container - Documentation">Doc</a></h2>
+        <h2 id="container-fluid" class="h2">Fluid Container <a class="btn btn-sm text-bg-dark btn-bs-version" href="https://getbootstrap.com/docs/5.3/layout/containers/#fluid-containers" target="_blank" title="Bootstrap Fluid container - Documentation">Doc</a></h2>
       </div>
     </div>
   </div>
@@ -123,7 +124,7 @@
   <div class="container mb-3">
     <div class="row">
       <div class="col">
-        <h2 id="container-row" class="h2">Row <a class="btn btn-sm text-bg-dark" href="https://getbootstrap.com/docs/<?php echo $MAJADC_BOOTSTRAP_VERSION; ?>/layout/grid/#how-it-works" target="_blank" title="Bootstrap Row - Documentation">Doc</a></h2>
+        <h2 id="container-row" class="h2">Row <a class="btn btn-sm text-bg-dark btn-bs-version" href="https://getbootstrap.com/docs/5.3/layout/grid/#how-it-works" target="_blank" title="Bootstrap Row - Documentation">Doc</a></h2>
       </div>
     </div>
   </div>
@@ -144,7 +145,7 @@
   <div class="container mb-3">
     <div class="row">
       <div class="col">
-        <h2 id="container-column" class=" h2">Column <a class="btn btn-sm text-bg-dark" href="https://getbootstrap.com/docs/<?php echo $MAJADC_BOOTSTRAP_VERSION; ?>/layout/grid/#how-it-works" target="_blank" title="Bootstrap Column - Documentation">Doc</a></h2>
+        <h2 id="container-column" class=" h2">Column <a class="btn btn-sm text-bg-dark btn-bs-version" href="https://getbootstrap.com/docs/5.3/layout/grid/#how-it-works" target="_blank" title="Bootstrap Column - Documentation">Doc</a></h2>
       </div>
     </div>
   </div>
@@ -165,7 +166,7 @@
   </div>
 
 
-</section>
+</article>
 
 
 <?php require_once 'footer.php' ?>
