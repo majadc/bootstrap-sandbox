@@ -50,7 +50,7 @@ let bsLayoutGridColStyle = {};
         let resultColStyle = "";
 
         for (let i = 0; i < colClassNamesArray.length; i++) {
-          let currentColStyle = cssRulesMajadc.getCssStyleRules(
+          let currentColStyle = CSSStyleExtractor.initialize(
             fileCSSStyle,
             `.${colClassNamesArray[i]}`
           );

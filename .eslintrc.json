@@ -12,7 +12,7 @@
   "globals": {
     "window": true,
     "module": true,
-    "cssRulesMajadc": true,
+    "CSSStyleExtractor": true,
     "CSSStyleRulesInformation": true,
     "bsBreakpointsMediaQueriesList": true,
     "bsBreakpointsMediaQueries": true,
