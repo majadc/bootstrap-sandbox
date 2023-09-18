@@ -1,0 +1,35 @@
+.md-selectors-style-extractor {
+
+  pre {
+    white-space: pre-wrap;
+  }
+
+  .md-sse-spinner-ready {
+    animation-iteration-count: 3;
+    opacity: 1
+  }
+
+  .md-sse-show-style-btn {
+    padding-right: 1.75rem;
+    padding-left: 1.75rem;
+    position: relative;
+
+    .spinner-border {
+      position: absolute;
+      top: 0.76rem;
+      left: 0.5rem;
+    }
+  }
+
+  .md-sse-form-check-input:checked {
+    background-color: $warning;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: var(--bs-accordion-active-bg);
+  }
+
+  .accordion-button {
+    background-color: $light;
+  }
+}
