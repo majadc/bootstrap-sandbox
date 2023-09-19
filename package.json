@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "lint": "stylelint \"scss/*.scss\"",
-    "scss:watch": "sass --watch scss/bs-layout/style-bs-layout.scss:css/style-bs-layout.css",
-    "css:compile": "sass scss/style-bs-layout.scss css/style-bs-layout.css",
-    "css:compile:compress": "sass --style compressed --source-map --embed-sources scss/style-bs-layout.scss css/style-bs-layout.css",
-    "css:prefix": "postcss css/style-bs-layout.css --replace --use autoprefixer --map ",
+    "scss:watch": "sass --watch scss/style.scss:css/style.css",
+    "css:compile": "sass scss/style.scss css/style.css",
+    "css:compile:compress": "sass --style compressed --source-map --embed-sources scss/style.scss css/style.css",
+    "css:prefix": "postcss css/style.css --replace --use autoprefixer --map ",
     "css:build": "npm-run-all css:compile:compress css:prefix"
   },
   "keywords": [

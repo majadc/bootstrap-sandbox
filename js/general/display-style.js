@@ -27,7 +27,7 @@ let CSSStyleRulesInformation = {};
   ) {
     if (elementJSOutput.startsWith("#")) {
       let jsOutputElement = document.getElementById(elementJSOutput.slice(1));
-      jsOutputElement.innerHTML = CSSStyleExtractor.initialize(
+      jsOutputElement.innerHTML = CSSStyleExtractor.init(
         CSSStyleFileName,
         selectorName
       );
@@ -36,7 +36,7 @@ let CSSStyleRulesInformation = {};
         elementJSOutput.slice(1)
       );
       for (let i = 0; i < jsOutputElement.length; i++) {
-        jsOutputElement[i].innerHTML = CSSStyleExtractor.initialize(
+        jsOutputElement[i].innerHTML = CSSStyleExtractor.init(
           CSSStyleFileName,
           selectorName
         );
@@ -46,7 +46,7 @@ let CSSStyleRulesInformation = {};
 
       if (jsOutputElement.length > 0) {
         for (let i = 0; i < jsOutputElement.length; i++) {
-          jsOutputElement[i].innerHTML = CSSStyleExtractor.initialize(
+          jsOutputElement[i].innerHTML = CSSStyleExtractor.init(
             CSSStyleFileName,
             selectorName
           );

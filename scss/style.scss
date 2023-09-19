@@ -4,6 +4,10 @@
 @import "../node_modules/bootstrap/scss/maps";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/root";
+
+// -----selectors-style-extractor
+@import "selectors-style-extractor/selectors-style-extractor";
+
 // -----bs-layout---------------------------------------------------------------
 @import "bs-layout/bs-breakpoints-list";
 @import "bs-layout/bs-breakpoints-media-queries-info";

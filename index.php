@@ -50,7 +50,7 @@
       <div id="collapseUtilities" class="collapse" aria-labelledby="heading-utilities" data-bs-parent="#accordion-bs-templates">
         <div class="accordion-body">
           <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="">Reboot</a></li>
+            <li class="nav-item"><a class="nav-link" href="content-reboot.php">Reboot</a></li>
             <li class="nav-item"><a class="nav-link" href="">Topography</a></li>
           </ul>
         </div>

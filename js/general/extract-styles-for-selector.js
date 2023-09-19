@@ -1,10 +1,5 @@
-var CSSStyleExtractor = CSSStyleExtractor || {};
-(function () {
-  /*****************************************************************************
-   * PRIVATE PROPERTIES
-   *****************************************************************************
-   */
-
+const CSSStyleExtractor = (() => {
+  
   // The CSS file name provided by user.
   let cse_selectorName = "";
 
@@ -14,11 +9,6 @@ var CSSStyleExtractor = CSSStyleExtractor || {};
   // An array of keyframes names that aren't used within specific CSS style rules.
   let cse_keyframesNamesToRemove = [];
 
-  /*****************************************************************************
-   * PUBLIC METHODS
-   *****************************************************************************
-   */
-
   /**
    *
    * @param {String} styleSheetName The name of the stylesheet.
@@ -27,7 +17,7 @@ var CSSStyleExtractor = CSSStyleExtractor || {};
    *                   or empty string if there are no CSSStyleRules for the selector
    *                   or null if there is no the CSS style sheet
    */
-  this.initialize = function (styleSheetName, selectorName) {
+  function init (styleSheetName, selectorName) {
     cse_selectorName = sanitizeSelectorName(selectorName);
     cse_styleSheetName = styleSheetName;
     let CSSStyleRules = getCSSStyleRules(styleSheetName);
@@ -44,11 +34,7 @@ var CSSStyleExtractor = CSSStyleExtractor || {};
     return formattedRules;
   };
 
-  /*****************************************************************************
-   * PRIVATE METHODS
-   *****************************************************************************
-   */
-
+  
   /****************************************************************************
    * FORMATTING the CSS style rulesets
    */
@@ -460,7 +446,7 @@ var CSSStyleExtractor = CSSStyleExtractor || {};
         selectorName
       );
       if (selectorName.charAt(posEqual + 1) === '"') {
-        let sanitizedChunk = selectorName.slice(0, posClosingSquareBracket + 1);
+        let sanitizedChunk = selectorName.slice(0, posClosingSquareBracket);
         sanitizedSelectorName = `${sanitizedSelectorName}${sanitizedChunk}`;
       } else {
         let stringToEqual = selectorName.slice(0, posEqual);
@@ -540,4 +526,8 @@ var CSSStyleExtractor = CSSStyleExtractor || {};
     }
     return null;
   }
-}).apply(CSSStyleExtractor);
+  
+  return {
+    init: init,
+  };
+})();

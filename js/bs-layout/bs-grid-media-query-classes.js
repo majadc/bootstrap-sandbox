@@ -33,7 +33,7 @@ let bsGridMediaQueryClasses = {};
     let cells = container.getElementsByClassName("row")[0].children;
 
     for (let i = 0; i <= isBreakpointIndex(); i++) {
-      let info = CSSStyleExtractor.initialize(
+      let info = CSSStyleExtractor.init(
         CSSStyleFileName,
         `.${breakpointsUp[i].class}`
       );

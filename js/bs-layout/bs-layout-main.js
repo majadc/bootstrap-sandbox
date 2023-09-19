@@ -1,4 +1,4 @@
-const bsBootstrapCssFile = "bootstrap.min.css";
+const bsBootstrapCssFile = "bootstrap-grid.css";
 
 /*******************************************************************************
  *
