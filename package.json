@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "lint": "stylelint \"scss/*.scss\"",
-    "scss:watch": "sass --watch scss/style.scss:css/style.css",
-    "css:compile": "sass scss/style.scss css/style.css",
-    "css:compile:compress": "sass --style compressed --source-map --embed-sources scss/style.scss css/style.css",
-    "css:prefix": "postcss css/style.css --replace --use autoprefixer --map ",
+    "scss:watch": "sass --watch scss/bs-style.scss:css/bs-style.css",
+    "css:compile": "sass scss/bs-style.scss css/bs-style.css",
+    "css:compile:compress": "sass --style compressed --source-map --embed-sources scss/bs-style.scss css/bs-style.css",
+    "css:prefix": "postcss css/bs-style.css --replace --use autoprefixer --map ",
     "css:build": "npm-run-all css:compile:compress css:prefix"
   },
   "keywords": [
@@ -20,16 +20,16 @@
   "author": "majadc",
   "license": "ISC",
   "dependencies": {
-    "autoprefixer": "^10.4.14",
-    "bootstrap": "^5.3.0"
+    "autoprefixer": "^10.4.16",
+    "bootstrap": "^5.3.2"
   },
   "devDependencies": {
-    "eslint": "^8.45.0",
-    "eslint-plugin-compat": "^4.1.4",
+    "eslint": "^8.55.0",
+    "eslint-plugin-compat": "^4.2.0",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.27",
-    "postcss-cli": "^10.1.0",
-    "stylelint": "^15.10.2",
-    "stylelint-config-standard-scss": "^10.0.0"
+    "postcss": "^8.4.32",
+    "postcss-cli": "^11.0.0",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard-scss": "^11.1.0"
   }
 }
